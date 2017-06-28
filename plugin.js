@@ -98,7 +98,7 @@ CKEDITOR.plugins.add('strinsert',
 			{
 				editor.focus();
 				editor.fire( 'saveSnapshot' );
-				editor.insertHtml(value);
+				editor.insertText(value);
 				editor.fire( 'saveSnapshot' );
 			},
 
