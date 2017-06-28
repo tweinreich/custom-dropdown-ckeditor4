@@ -59,7 +59,36 @@ If the value key is *not* defined and the name key is, then a group header with 
 
 You can additionally set name shown for the dropdown button with **config.strinsert_button_label** ('Insert' by default) and the title/tooltip text with  **config.strinsert_button_title** and the voice label text **config.strinsert_button_voice** (both 'Insert content' by default).
 
+## Available DokuWiki Macros
+I have added these macros (*syntax snippets for using some DokuWiki plugins and native syntax*) so far:
+
+### Zitat
+```> Zitat eingeben…```
+
+### Autoren
+```~~AUTHORS~~```
+
+### Seiten
+```<nspages -simpleList>```
+
+### No Cache
+```~~NOCACHE~~```
+
+### No TOC
+```~~NOTOC~~```
+
+### ACL Info
+```~~ACLINFO~~```
+
+### Image gallery
+```{{gallery>?crop&lightbox}}```
+
+### Comment
+```/* Insert comment here */```
+
+
 ## TODO
-* add HTML-Entity fix
-* add basic DokuWiki macros entries
-* add macro info to documentation
+* ~~add HTML-Entity fix~~
+* ~~add basic DokuWiki macros entries~~
+* ~~add macro info to documentation~~
+* add macro links to documentation
