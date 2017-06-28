@@ -19,6 +19,12 @@ By Stuart Sillitoe (57u) and Marcus Bointon (Synchro).
 
  * https://github.com/57u/custom-dropdown-ckeditor4
  * https://github.com/Synchro/custom-dropdown-ckeditor4
+ 
+## System Info & Requirements
+* Tested on DokuWiki version 2017-02-19 "Frusterick Manners"
+* ckgdoku plugin: https://www.dokuwiki.org/plugin:ckgdoku
+* For the provided macros to work, you have to install the following plugins in DokuWiki:
+   - to be done...
 
 ## Installation
 
