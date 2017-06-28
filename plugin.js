@@ -23,10 +23,31 @@
  * with the given name will be provided in the dropdown box.  This heading is
  * not clickable and does not insert, it is for organizational purposes only.
  */
+
+// Include your macro entities here to easily use them in the array below while keeping it short & decluttered
+var macros = { 
+		0: '<nspages -simpleList>', 
+		1: '~~NOTOC~~', 
+		2: '~~NOCACHE~~',
+		3: '~~ACLINFO~~',
+		4: '{{gallery>?crop&lightbox}}',
+		5: '<acmenu>',
+		6: '/* Kommentar hier eingeben */'
+};
+
 CKEDITOR.config.strinsert_strings =	 [
-			{'name': 'Name', 'value': '*|VALUE|*'},
-			{'name': 'Group 1'},
-			{'name': 'Another name', 'value': 'totally_different', 'label': 'Good looking'},
+			{'name': 'Inhalt'},
+			{'name': 'Zitat', 'value': '> Zitat eingeben...', 'label': 'Text zitieren'},
+			{'name': 'Gallerie', 'value': macros[4], 'label': 'Bilder in diesem Namespace als Gallerie anzeigen'},
+			{'name': 'Info'},
+			{'name': 'Autoren', 'value': '~~AUTHORS~~', 'label': 'Liste der Autoren anzeigen'},
+			{'name': 'Seitenliste', 'value': macros[0], 'label': 'Seiten in diesem Namespace auflisten'},
+			{'name': 'Seitenbaum', 'value': macros[5], 'label': 'Seiten als hierarchische Baumstruktur darstellen'},
+			{'name': 'Erweitert'},
+			{'name': 'No Cache', 'value': macros[2], 'label': 'Verhindert das Caching dieser Seite'},
+			{'name': 'No TOC', 'value': macros[1], 'label': 'Keine Inhaltsübersicht anzeigen'},
+			{'name': 'ACL Info', 'value': macros[3], 'label': 'Berechtigungen für diese Seite anzeigen'},
+			{'name': 'Kommentar', 'value': macros[6], 'label': 'Kommentar einfügen das nur beim Bearbeiten der Seite sichtbar ist'}
 		];
 
 /**
